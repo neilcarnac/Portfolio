@@ -3,46 +3,30 @@
 @tailwind utilities;
 
 .btn {
-  background: linear-gradient(
-    92.23deg,
-    #ff56f6 21.43%,
-    #b936ee 50.63%,
-    #3bace2 100%,
-    #406aff 117.04%
-  );
-  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+  background-color: #2c2c2c; /* Black */
+  box-shadow: 0px 4.42184px 107.23px rgba(0, 0, 0, 0.51); /* Black shadow */
+  transition: background-color 0.5s;
 }
 
 .btn:hover {
-  background: linear-gradient(
-    92.23deg,
-    #406aff 21.43%,
-    #3bace2 50.63%,
-    #b936ee 100%,
-    #ff56f6 117.04%
-  );
+  background-color: #181818; /* Dark Gray */
 }
 
 .gradient,
 .active {
-  background: linear-gradient(
-    92.23deg,
-    #406aff 21.43%,
-    #3bace2 50.63%,
-    #b936ee 100%,
-    #ff56f6 117.04%
-  );
+  background-color: #1b1a1a; /* Black */
 }
 
 .active {
-  color: #fff;
+  color: #fff; /* White text */
   padding: 1rem;
   border-radius: 100%;
 }
 
 @layer base {
   body {
-    @apply font-secondary text-lg leading-8 text-white;
+    @apply font-secondary text-lg leading-8 text-white; /* White text */
+    background-color: #181818; /* Dark Gray background */
   }
   .h2 {
     @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
@@ -51,7 +35,7 @@
     @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
   }
   .btn {
-    @apply rounded-full font-primary text-white font-medium;
+    @apply rounded-full font-primary text-white font-medium; /* White text */
   }
   .btn-sm {
     @apply h-[48px] px-6 text-sm;

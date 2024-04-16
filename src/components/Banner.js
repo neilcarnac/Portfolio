@@ -4,6 +4,7 @@ import { FaGithub, FaYoutube, FaDribbble } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -49,8 +50,7 @@ const Banner = () => {
                 viewport={{ once: false, amount: 0.7 }}
                 className="mb-auto mx-0 max-w-lg lg:max-0"
               >
-                lorem emps lorem empslorem empslorem empslorem lorem emps lorem
-                emps emps
+               Passionate software developer with a knack for turning ideas into functional and user-friendly applications
               </motion.p>
               <motion.div 
               variants={fadeIn("up", 0.6)}
@@ -58,11 +58,15 @@ const Banner = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 my-6 items-center mb-12 mx-auto lg:mx-0 ">
-                <button className="btn btn-lg ">Contact Me</button>
-
-                <a className="text-gradient btn-link" href="#">
+               <Link to="/contact">
+               <button className="btn btn-lg ">Contact Me</button>
+               </Link> 
+<Link to="/resume">
+<p className="text-gradient btn-link" href="#">
                   My Resume
-                </a>
+                </p>
+</Link>
+
               </motion.div>
               <motion.div
               variants={fadeIn("up", 0.7)}
