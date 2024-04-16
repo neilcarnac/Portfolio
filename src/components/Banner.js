@@ -90,7 +90,7 @@ const Banner = () => {
                 </a>
               </motion.div>
             </div>
-            <motion.div
+            {/* <motion.div
               variants={fadeIn("down", 0.5)}
               initial="hidden"
               whileInView={"show"}
@@ -98,7 +98,7 @@ const Banner = () => {
               className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[462px] "
             >
               <img src={Image} alt=" " />
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </section>
