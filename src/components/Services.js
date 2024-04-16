@@ -37,7 +37,10 @@ const Services = () => {
                 I am a Freelance Fullstack Developer with over 5 years of
                 Experience
               </h4>
+              <Link to="/projects">
+
               <button className="btn btn-sm">See my work</button>
+              </Link>
             </motion.div>
             <div>
               <motion.div
