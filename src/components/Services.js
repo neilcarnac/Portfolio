@@ -8,27 +8,16 @@ const services = [
   {
     name: "Full Stack Developer",
     description:
-      "lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry originator",
+      "Fluent in MERN with mongo or firebase databases, I have also worked with postgress sql for rdbms queries ",
     link: "Learn more ",
   },
   {
     name: "UI/UX Design",
     description:
-      "lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry originator",
+      " My team and i collaborared and worked on an Uber using Blockchain and metamask, we made sure that even with a wallet gateway the user could book a cab with the same number of clicks and simpler than uber itself.",
     link: "Learn more ",
   },
-  {
-    name: "Software Engineer",
-    description:
-      "lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry originator",
-    link: "Learn more ",
-  },
-  {
-    name: "Graphic Designer",
-    description:
-      "lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry originator",
-    link: "Learn more ",
-  },
+  
 ];
 
 const Services = () => {
@@ -62,14 +51,14 @@ const Services = () => {
 
                   return (
                     <div
-                      className="border-b border-white/20 h-[146px] mb-[38px] flex"
+                      className=" h-[146px] mb-[38px] flex flex-row gap-12"
                       key={index}
                     >
                       <div className="max-w-[476px]">
                         <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6">
                           {name}
                         </h4>
-                        <p className="font-secondary leading-tight">
+                        <p className=" font-secondary leading-tight w-96">
                           {description}
                         </p>
                       </div>

@@ -7,7 +7,7 @@ const Header = () => {
     <div className='container mx-auto'>
       <div className='flex justify-between items-center'>
         <a href='#'>
-          <img src={Logo} alt='logo' />
+          <h2 className='text-xl uppercase font-medium mb-2 tracking-wide text-gradient' >Neil <br /> <h2 className='text-white'>Carnac</h2></h2>
         </a>
         <button className='btn btn-sm '>
           Work with me
