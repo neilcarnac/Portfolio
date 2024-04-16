@@ -9,7 +9,10 @@ import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <>
-      <section className="min-h-[85vh] lg:min-h-[78vh] flex items-center" id="home">
+      <section
+        className="min-h-[85vh] lg:min-h-[78vh] flex items-center"
+        id="home"
+      >
         <div className="container mx-auto">
           <div className="flex flex-col gapy-y-8 lg:flex-row lg:items-center lg:gap-x-12 ">
             <div className="flex-1 text-center font-secondary lg:text-left ">
@@ -50,31 +53,33 @@ const Banner = () => {
                 viewport={{ once: false, amount: 0.7 }}
                 className="mb-auto mx-0 max-w-lg lg:max-0"
               >
-               Passionate software developer with a knack for turning ideas into functional and user-friendly applications
+                Passionate software developer with a knack for turning ideas
+                into functional and user-friendly applications
               </motion.p>
-              <motion.div 
-              variants={fadeIn("up", 0.6)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className="flex max-w-max gap-x-6 my-6 items-center mb-12 mx-auto lg:mx-0 ">
-               <Link to="/contact">
-               <button className="btn btn-lg ">Contact Me</button>
-               </Link> 
-<Link to="/resume">
-<p className="text-gradient btn-link" href="#">
-                  My Resume
-                </p>
-</Link>
-
+              <motion.div
+                variants={fadeIn("up", 0.6)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.7 }}
+                className="flex max-w-max gap-x-6 my-6 items-center mb-12 mx-auto lg:mx-0 "
+              >
+                <Link to="/contact">
+                  <button className="btn btn-lg ">Contact Me</button>
+                </Link>
+                <Link to="/resume">
+                  <p className="text-gradient btn-link" href="#">
+                    My Resume
+                  </p>
+                </Link>
               </motion.div>
               <motion.div
-              variants={fadeIn("up", 0.7)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0">
-                <a href="#">
+                variants={fadeIn("up", 0.7)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.7 }}
+                className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
+              >
+                <a href="https://github.com/neilcarnac">
                   <FaGithub />
                 </a>
                 <a href="#">
@@ -86,11 +91,12 @@ const Banner = () => {
               </motion.div>
             </div>
             <motion.div
-            variants={fadeIn("down", 0.5)}
-            initial="hidden"
-            whileInView={"show"}
-            // viewport={{ once: false, amount: 0.7 }}
-            className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[462px] ">
+              variants={fadeIn("down", 0.5)}
+              initial="hidden"
+              whileInView={"show"}
+              // viewport={{ once: false, amount: 0.7 }}
+              className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[462px] "
+            >
               <img src={Image} alt=" " />
             </motion.div>
           </div>

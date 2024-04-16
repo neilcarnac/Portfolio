@@ -2,7 +2,7 @@ import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -17,7 +17,6 @@ const services = [
       " My team and i collaborared and worked on an Uber using Blockchain and metamask, we made sure that even with a wallet gateway the user could book a cab with the same number of clicks and simpler than uber itself.",
     link: "Learn more ",
   },
-  
 ];
 
 const Services = () => {
@@ -27,11 +26,12 @@ const Services = () => {
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row ">
             <motion.div
-            variants={fadeIn('right', 0.3)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 lg:bg-services lg:bg-button bg-no-repeat mix-blend-lighten mb-12 lg:mb-0">
+              variants={fadeIn("right", 0.3)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className="flex-1 lg:bg-services lg:bg-button bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
+            >
               <h2 className="h2 text-accent mb-6">What I do</h2>
               <h4 className="h4 max-w-[455px] mb-16">
                 I am a Freelance Fullstack Developer with over 5 years of
@@ -40,12 +40,13 @@ const Services = () => {
               <button className="btn btn-sm">See my work</button>
             </motion.div>
             <div>
-              <motion.div 
-              variants={fadeIn('left', 0.5)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
-              className="flex-1">
+              <motion.div
+                variants={fadeIn("left", 0.5)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                className="flex-1"
+              >
                 {services.map((service, index) => {
                   const { name, description, link } = service;
 
@@ -62,17 +63,12 @@ const Services = () => {
                           {description}
                         </p>
                       </div>
-                      <div className="flex flex-col flex-1 items-end cursor-pointer ">
-                        <a
-                          href="#"
-                          className="btn w-9 h-9 mv-[42px] flex justify-center items-center "
-                        >
+                      <Link to="/resume">
+                        <div className="flex flex-col flex-1 items-end cursor-pointer ">
                           <BsArrowUpRight />
-                        </a>
-                        <a href="#" className="text-gradient mt-12 text-sm">
                           {link}
-                        </a>
-                      </div>
+                        </div>
+                      </Link>
                     </div>
                   );
                 })}
